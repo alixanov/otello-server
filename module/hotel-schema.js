@@ -25,6 +25,10 @@ const HotelSchema = new Schema({
           type: Number, // Цена
           required: true,
      },
+     joylashuv: {
+          type: String, // Тип информации (оставил строкой)
+          required: true,
+     },
      // ✅ Новые поля для удобств отеля
      wifi: {
           type: Boolean,

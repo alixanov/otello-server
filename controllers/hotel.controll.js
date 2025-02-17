@@ -46,12 +46,12 @@ const deletedProduct = async (req, res) => {
 const updateProduct = async (req, res) => {
      try {
           const { id } = req.params;
-          const { rasm, icon, nomi, manzil, malumoti, narxi, wifi, parking, breakfast, pool, gym } = req.body;
+          const { rasm, icon, nomi, manzil, malumoti, narxi,joylashuv, wifi, parking, breakfast, pool, gym } = req.body;
 
           // Янгиланишни амалга ошириш
           const updatedProduct = await HotelSchema.findByIdAndUpdate(
                id,
-               { rasm, icon, nomi, manzil, malumoti, narxi, wifi, parking, breakfast, pool, gym },
+               { rasm, icon, nomi, manzil, malumoti, narxi,joylashuv, wifi, parking, breakfast, pool, gym },
                { new: true }
           );
 
