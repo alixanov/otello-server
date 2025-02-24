@@ -29,6 +29,10 @@ const HotelSchema = new Schema({
           type: String, // Тип информации (оставил строкой)
           required: true,
      },
+     star: {
+          type: Number, // Цена
+          required: true,
+     },
      // ✅ Новые поля для удобств отеля
      wifi: {
           type: Boolean,
@@ -50,6 +54,7 @@ const HotelSchema = new Schema({
           type: Boolean,
           default: false,
      },
+ 
 });
 
 module.exports = model("Hotel", HotelSchema);
